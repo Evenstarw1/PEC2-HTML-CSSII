@@ -1,0 +1,46 @@
+.header {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-yellow;
+
+  @include for-tablet {
+    flex-direction: column;
+  }
+
+  &__logo_img {
+    width: 100px;
+  }
+
+  &__navbar_links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    @include for-tablet {
+      padding-top: 20px;
+    }
+
+    @include for-mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    a {
+      padding-right: 2rem;
+      font-size: $font-l;
+      text-decoration: none;
+      color: $color-purple;
+    }
+
+    a:hover {
+      color: $color-yellow;
+    }
+  }
+}

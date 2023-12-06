@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/jpg" href="./assets/images/logo.ico" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>Liga de Tennis</title>
+    </head>
+    <body>
+        <include src="./views/header.html"></include>
+        <article id="information">
+            <h1>Conoce el club</h1>
+            <section id="history">
+                <h2>Historia</h2>
+                <div class="section__display">
+                    <div class="section__display_paragraphs">
+                        <p>
+                            Nuestro club se fundó cuando nuestro grupo de amigos, todos
+                            amantes del tenis, se juntaban los fines de semana para
+                            practicar juntos su deporte favorito en las instalaciones de
+                            la población, cedidas por el ayuntamiento.
+                        </p>
+                        <p>
+                            Hace unos meses decidimos hacer realidad un sueño: Hacer que
+                            otras personas se unieran y practicaran con nosotros.
+                        </p>
+                        <p>
+                            El objetivo de este club, sin ánimo de lucro, es fomentar la
+                            práctica de la actividad física y deportiva, entre mayores y
+                            pequeños de la zona.
+                        </p>
+                    </div>
+                    <blockquote>
+                        <p>
+                            El tenis es solo un juego, la familia es para siempre.
+                        </p>
+                        <p class="blockquote__author">Serena Wiliams</p>
+                    </blockquote>
+                </div>
+            </section>
+
+            <hr />
+            <section id="infoList">
+                <h2>¿Qué ofrecemos?</h2>
+                <ol>
+                    <li>
+                        <span>Clases</span>
+                        <p>
+                            Se imparten clases para todos los niveles, tanto
+                            infantil como adulto. En un ámbiente familiar y
+                            lleno de motivación por el aprendizaje.
+                        </p>
+                    </li>
+                    <li>
+                        <span>Torneos</span>
+                        <p>
+                            Para fomentar la participación en el juego, se realizarán diferentes torneos a lo largo del año
+                            entre los miembros del club y alumnos.
+                        </p>
+                    </li>
+                    <li>
+                        <span>Eventos Sociales</span>
+                        <p>
+                            Entre los miembros del club, queremos crear una pequeña gran familia y por ello se realizaran diferentes
+                            eventos sociales: fiestas, excursiones...
+                        </p>
+                    </li>
+                </ol>
+                <figure>
+                    <img
+                        src="./assets/images/tenis-club.jpg"
+                        alt="Tenis con amigos"
+                    />
+                    <figcaption>Práctica tenis con tus amigos</figcaption>
+                </figure>
+            </section>
+            <hr/>
+            <section id="instalations">
+                <h2>Nuestras instalaciones</h2>
+                <p>Contamos con las mejores pistas de la comarca. El ayuntamiento de Villa Ficticia ha tenído el placer de 
+                    cedernos las instalaciones para la puesta en marcha de nuestro club. Además de las estupendas pistas
+                    contamos con la sala de usos múltiples (perfecta para realizar practicas en los días de lluvia), así como
+                    los aseos y zona de parking gratuito.
+                </p>
+                <p>La ubicación de las instalaciones es perfecta para que puedan asistir todas las personas de Villa Ficticia y 
+                    poblaciones de los alrededores, pues cuenta con acceso directo desde la carretera principal.
+                </p>
+                <figure>
+                    <img
+                        src="./assets/images/ubication-map.png"
+                        alt="Mapa instalaciones del club"
+                    />
+                    <figcaption>Mapa para acceder a nuestras <span>instalaciones</span></figcaption>
+                </figure>
+            </section>
+            <hr/>
+            <section id="schedule">
+                <h2>Horarios del club</h2>
+                <div class="section__display">
+                    <div class="section__display_paragraphs">
+                        <p>Nuestras actividades se impartirán los siguientes días:</p>
+                        <ul>
+                            <li>Miércoles y Viernes: 18:00 - 20:00 horas</li>
+                            <li>Sábados: 10:00 - 13:30 horas</li>
+                        </ul>
+                    </div>
+                    <blockquote>
+                        <p>
+                            Cuando el que está en frente es mejor que tú, se le da la mano, y al siguiente torneo.
+                        </p>
+                        <p class="blockquote__author">Rafa Nadal</p>
+                    </blockquote>
+                </div>
+            </section>
+        </article>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>

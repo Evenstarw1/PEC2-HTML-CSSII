@@ -6,11 +6,18 @@
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
+import * as bootstrap from 'bootstrap';
+
 /**
  * Write any other JavaScript below
  */
 
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}

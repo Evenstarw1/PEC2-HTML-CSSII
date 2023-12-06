@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: $font-poppins;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $color-white;
+}
+
+h1, h2, h3, h5 {
+  font-family: $font-lexend;
+}
+
+#form, #information {
+  margin-right: 8vh;
+  margin-left: 8vh;
+}
+
+:where(#form, #members, #information)>h1 {
+  padding-top: 20px;
+}

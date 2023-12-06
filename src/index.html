@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/jpg" href="./assets/images/logo.ico" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>Liga de Tennis</title>
+    </head>
+    <body>
+        <include src="./views/header.html"></include>
+        <div class="home__display">
+            <div class="home__display_picture">
+                <picture>
+                    <img src="./assets/images/portada.png" />
+                </picture>
+            </div>
+            <div class="home__display_title">
+                <h1>
+                    <i class="fa-solid fa-star"></i> Liga de Tennis
+                    <i class="fa-solid fa-star"></i>
+                </h1>
+                <h2>Primer torneo temporada 2024</h2>
+            </div>
+            <div class="home__display--description">
+                <div class="description__container">
+                    <p>
+                        El club "Amigos del Tennis" presenta el nuevo torneo que
+                        se celebrará durante el mes de Enero 2024 en el
+                        polideportivo de Villa Ficticia.
+                    </p>
+                    <p>
+                        El 40% de lo recaudado en la venta de entradas del
+                        torneo será destinado a la protectora de animales de la
+                        que se encarga el socio Custodio. El restante será para
+                        la mejora de las instalaciones y la realización de
+                        nuevas actividades.
+                    </p>
+                    <p>
+                        No lo dudes más y compra tus entradas antes de que se
+                        agoten!!
+                    </p>
+                </div>
+            </div>
+            <div class="home__display--btn">
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="button"
+                    id="liveToastBtn"
+                >
+                    ¡Compra tus entradas!
+                </button>
+            </div>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div
+                    id="liveToast"
+                    class="toast"
+                    role="alert"
+                    aria-live="assertive"
+                    aria-atomic="true"
+                >
+                    <div class="toast-header">
+                        <img
+                            src="./assets/images/work-progress.png"
+                            class="rounded me-2 h-auto w-auto"
+                            alt="..."
+                        />
+                        <strong class="me-auto">Muchas gracias</strong>
+                        <small>Now</small>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="toast"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="toast-body">
+                        Lo sentimos, está página aún se encuentra en
+                        construcción.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>
